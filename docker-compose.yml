@@ -1,13 +1,29 @@
 version: "3"
 services:
+  mongodb:
+    image: mongo:6.0
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: mongo
+      MONGO_INITDB_DATABASE: PokeClash
+    volumes:
+      - 'mongo:/data/db'
+      - './init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro'
   backend:
     build:
       context: ./api/
       dockerfile: Dockerfile
     ports:
       - "9000:9000"
+    environment:
+      MONGODB_URI: "mongodb://mongo:mongo@mongodb:27017/PokeClash"
     volumes:
-      - ./api/.:/usr/src/app 
+      - ./api/.:/usr/src/app
+    depends_on:
+      - mongodb 
   frontend:
     build:
       context: ./client/
@@ -16,3 +32,5 @@ services:
       - "3000:3000"
     volumes:
       - ./client/.:/usr/src/app 
+volumes:
+  mongo: {}
