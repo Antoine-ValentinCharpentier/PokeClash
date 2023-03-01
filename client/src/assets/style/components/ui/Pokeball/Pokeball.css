@@ -1,0 +1,46 @@
+.pokeball {
+  background: linear-gradient(
+    0deg,
+    var(--pokeball-white) 0%,
+    var(--pokeball-white) 50%,
+    var(--pokeball-red) 50%,
+    var(--pokeball-red) 100%
+  );
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 7px var(--pokeball-black) solid;
+  position: relative;
+}
+
+.pokeball::before,
+.pokeball-btn,
+.pokeball-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pokeball::before {
+  content: "";
+  width: 100%;
+  background-color: var(--pokeball-black);
+  height: 25%;
+}
+
+.pokeball-btn {
+  background-color: var(--pokeball-white);
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: 15px var(--pokeball-black) solid;
+}
+
+.pokeball-btn::before {
+  content: "";
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  border: 5px var(--pokeball-black) solid;
+}

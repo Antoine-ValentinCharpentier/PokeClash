@@ -1,0 +1,35 @@
+.form-title {
+  font-family: var(--font-bold);
+  font-size: var(--font-size-title-form);
+  width: 100%;
+}
+
+.right-form {
+  width: 80%;
+  max-width: 700px;
+  padding: 5%;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 0px;
+  border-radius: 6px;
+  border: none;
+  margin-top: calc(var(--font-size-regular) + 15px);
+  background-color: var(--green);
+  color: var(--white);
+  font-size: var(--font-size-big);
+}
+
+button:disabled {
+  background-color: var(--light-gray);
+  color: var(--black);
+  cursor: not-allowed;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}

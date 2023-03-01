@@ -1,0 +1,22 @@
+.form-item {
+  margin-top: 15px;
+}
+
+.form-item > * {
+  display: block;
+  font-size: var(--font-size-regular);
+  font-family: var(--font-regular);
+}
+
+.form-item label {
+  font-size: 18px;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin-top: 5px;
+}

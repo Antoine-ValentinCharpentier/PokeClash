@@ -1,0 +1,10 @@
+{
+  "account.exists": "Un compte avec cette adresse email existe déjà. Veuillez vous connecter !",
+  "account.created": "Le compte a bien été créé. Vous pouvez maintenant vous connecter.",
+  "account.create.missingFields": "Veuillez saisir un nom d'utilisateur, un email et un mot de passe valide !",
+  "account.notCreated": "Le compte n'a pas pu être créé. Veuillez réessayer plus tard.",
+  "email": "E-mail",
+  "password": "Mot de passe",
+  "signup": "S'inscrire",
+  "username": "Nom d'utilisateur"
+}

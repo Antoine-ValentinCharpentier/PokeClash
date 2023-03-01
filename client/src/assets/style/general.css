@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../fonts/OpenSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans SemiBold Italic";
+  src: url("../fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: white;
+  --blue: #81adc8;
+  --light-blue: #c0d6e4;
+  --extra-light-blue: #e6eff4;
+
+  --green: #77c66e;
+
+  --light-gray: #e3e3e3;
+
+  --black: black;
+
+  --pokeball-red: #fb0d3e;
+  --pokeball-white: white;
+  --pokeball-black: #111;
+
+  --opacity: 0.7;
+  --middle-opacity: 0.5;
+  --light-opacity: 0.3;
+
+  --blur: 15px;
+  --light-blur: 5px;
+
+  --font-bold: "Open Sans Bold";
+  --font-bold-italic: "Open Sans SemiBold Italic";
+  --font-regular: "Open Sans Regular";
+
+  --font-size-title-game: 72px;
+  --font-size-title-form: 40px;
+  --font-size-big: 18px;
+  --font-size-regular: 14px;
+  --font-size-small: 11px;
+  --font-size-extrasmall: 8px;
+}
