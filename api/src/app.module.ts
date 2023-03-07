@@ -11,6 +11,8 @@ import * as Joi from 'joi';
       isGlobal: true,
       validationSchema: Joi.object({
         MONGODB_URI: Joi.string().default('mongodb://localhost:27017/test'),
+        ACCESS_TOKEN_SECRET: Joi.string().default('AT_SECRET'),
+        REFRESH_TOKEN_SECRET: Joi.string().default('RT_SECRET'),
       }),
     }),
     MongooseModule.forRootAsync({

@@ -20,6 +20,8 @@ services:
       - "9000:9000"
     environment:
       MONGODB_URI: "mongodb://mongo:mongo@mongodb:27017/PokeClash"
+      ACCESS_TOKEN_SECRET: "AT_SECRET"
+      REFRESH_TOKEN_SECRET: "RT_SECRET"
     volumes:
       - ./api/.:/usr/src/app
     depends_on:
