@@ -70,7 +70,7 @@ export async function createRequest({ method, url: rawUrl } : RequestProps, opti
     return result
 }
 
-const request = axios.create({
+export const request = axios.create({
     baseURL: process.env.REACT_APP_API_URL,
     timeout: THIRTY_SECONDES,
     validateStatus: code => code >= 200 && code < 300,

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
 
 import Form from '../../../../components/Form/Form'
 import FormItem from '../../../../components/Form/FormItem'
@@ -20,6 +21,7 @@ type SignupFormValuesProps = {
 const SignUpPage: React.FC<SignUpPageProps> = () => {
 
   const [isLoading, setIsLoading] = useState(false)
+  const navigate = useNavigate();
 
     async function handleSubmit(values: SignupFormValuesProps) {
       if(!values.username || !values.password || !values.email) {
@@ -53,6 +55,7 @@ const SignUpPage: React.FC<SignUpPageProps> = () => {
       </FormItem>
       <button type="submit" disabled={isLoading}>{dictionnary.signup}</button>
     </Form>
+    <p className='alternative' onClick={() => navigate('/signin')}>{dictionnary['account.signup.alternative']}</p>
   </div>
     
   );

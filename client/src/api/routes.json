@@ -1,7 +1,8 @@
 {
   "auth": {
     "local": {
-      "signup": "/api/auth/local/signup"
+      "signup": "/api/auth/local/signup",
+      "signin": "/api/auth/local/signin"
     }
   }
 }

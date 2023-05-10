@@ -2,9 +2,13 @@
   "account.exists": "Un compte avec cette adresse email existe déjà. Veuillez vous connecter !",
   "account.created": "Le compte a bien été créé. Vous pouvez maintenant vous connecter.",
   "account.create.missingFields": "Veuillez saisir un nom d'utilisateur, un email et un mot de passe valide !",
+  "account.invalidCredential": "Il semblerait que vos identifiants de connexion ne soient pas corrects ! Avez-vous déjà un compte ?",
   "account.notCreated": "Le compte n'a pas pu être créé. Veuillez réessayer plus tard.",
+  "account.signin.alternative": "Pas de compte ? Cliquer ici pour s'inscrire",
+  "account.signup.alternative": "Déja un compte ? Cliquez ici pour se connecter",
   "email": "E-mail",
   "password": "Mot de passe",
+  "signin": "Se connecter",
   "signup": "S'inscrire",
   "username": "Nom d'utilisateur"
 }
