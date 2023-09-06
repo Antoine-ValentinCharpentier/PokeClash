@@ -7,8 +7,13 @@
   "account.signin.alternative": "Pas de compte ? Cliquer ici pour s'inscrire",
   "account.signup.alternative": "Déja un compte ? Cliquez ici pour se connecter",
   "email": "E-mail",
+  "menu.main.history": "Historique",
+  "menu.main.parameter": "Paramètres",
+  "menu.main.play": "Jouer",
+  "menu.main.team": "Equipe",
   "password": "Mot de passe",
   "signin": "Se connecter",
+  "signout": "Déconnexion",
   "signup": "S'inscrire",
   "username": "Nom d'utilisateur"
 }
